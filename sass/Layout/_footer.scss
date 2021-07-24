@@ -1,0 +1,27 @@
+.foot-container {
+  background-color: #353535;
+  color: white;
+  padding: 1.5rem;
+  @include vertical-start-content;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  &__title {
+    font-family: "Shrikhand", cursive;
+  }
+  &__liste {
+    @include vertical-start-content;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    font-size: 14px;
+  }
+  &__items {
+    @include vertical-centre-content;
+    column-gap: 0.5rem;
+    & i {
+      font-size: 10px;
+      text-align: center;
+      width: 10px;
+    }
+  }
+}

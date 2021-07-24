@@ -4,7 +4,9 @@
 @import "./Base/fonts";
 @import "./Base/base";
 @import "./Composants/boutons";
+@import "./Composants/badges";
 @import "./Layout/header";
+@import "./Layout/footer";
 
 .ville {
   @include vertical-centre-content;
@@ -30,34 +32,87 @@
     }
     &__subtitle {
       text-align: center;
-      color: #787878;
+      color: $text-gris;
     }
   }
 }
-.foot-container {
-  background-color: #353535;
-  color: white;
-  padding: 1.5rem;
+
+.fonctionnement {
   @include vertical-start-content;
   flex-direction: column;
+  padding: 3rem;
   row-gap: 1rem;
-
   &__title {
-    font-family: "Shrikhand", cursive;
   }
-  &__liste {
+  &__menus {
+    @include vertical-centre-content;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 10px;
+  }
+}
+
+.restaurants {
+  display: grid;
+  row-gap: auto repeat (3, 1fr);
+  row-gap: 1rem;
+  padding: 3rem;
+  background-color: $fond-gris;
+}
+.restaurants-cartes {
+  @include ombre-2;
+}
+.carte-menu {
+  display: grid;
+  grid-template-rows: 174px 78px;
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+
+  &__figure {
+    position: relative;
+    overflow: hidden;
+    @include vertical-centre-content;
+    @include bordure;
+
+    img {
+    }
+  }
+
+  &__body {
     @include vertical-start-content;
     flex-direction: column;
-    row-gap: 0.5rem;
-    font-size: 14px;
+    row-gap: 5px;
   }
-  &__items {
-    @include vertical-centre-content;
-    column-gap: 0.5rem;
-    & i {
-      font-size: 10px;
 
-      width: 10px;
+  &__title {
+    font-weight: bold;
+  }
+  &__subtitle {
+    color: $text-gris;
+  }
+  &__header {
+    padding: 18px 12px;
+    @include vertical-centre-content;
+    justify-content: space-between;
+
+    i {
+      font-size: 22px;
+      cursor: pointer;
+      -webkit-text-stroke-width: 1.5px;
+      -webkit-text-stroke-color: black;
+      color: white;
+
+      &:hover {
+        background: -webkit-linear-gradient(
+          162deg,
+          rgba(255, 121, 218, 1) 0%,
+          rgba(147, 86, 220, 1) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0;
+      }
     }
   }
 }

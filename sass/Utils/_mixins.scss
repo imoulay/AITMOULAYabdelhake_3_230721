@@ -9,3 +9,14 @@
   justify-content: center;
   align-items: flex-start;
 }
+
+@mixin ombre-1 {
+  box-shadow: 1px 4px 14px -5px #666666;
+}
+@mixin ombre-2 {
+  box-shadow: 1px 3px 14px -9px #666666;
+}
+
+@mixin bordure {
+  border-radius: 1rem 1rem 0 0;
+}
