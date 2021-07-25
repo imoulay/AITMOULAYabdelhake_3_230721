@@ -3,4 +3,12 @@
   padding: 1rem;
   background-color: white;
   height: 63px;
+  position: relative;
+
+  i {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: x-large;
+  }
 }

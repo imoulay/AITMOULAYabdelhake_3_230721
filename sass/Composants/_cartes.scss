@@ -1,0 +1,53 @@
+.carte-menu {
+  min-width: 334px;
+  min-height: 250px;
+  display: grid;
+  grid-template-rows: 174px 78px;
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+
+  &__figure {
+    position: relative;
+    overflow: hidden;
+    @include vertical-centre-content;
+    @include bordure;
+  }
+
+  &__body {
+    @include vertical-start-content;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+  &__subtitle {
+    color: $text-gris;
+  }
+  &__header {
+    padding: 18px 12px;
+    @include vertical-centre-content;
+    justify-content: space-between;
+
+    i {
+      font-size: 22px;
+      cursor: pointer;
+      -webkit-text-stroke-width: 1.5px;
+      -webkit-text-stroke-color: black;
+      color: white;
+
+      &:hover {
+        background: -webkit-linear-gradient(
+          162deg,
+          rgba(255, 121, 218, 1) 0%,
+          rgba(147, 86, 220, 1) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0;
+      }
+    }
+  }
+}
