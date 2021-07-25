@@ -7,7 +7,7 @@
   row-gap: 1rem;
 
   &__title {
-    font-family: "Shrikhand", cursive;
+    @include font-primaire;
   }
   &__liste {
     @include vertical-start-content;

@@ -10,6 +10,18 @@
   align-items: flex-start;
 }
 
+@mixin vertical-space-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin align-center-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @mixin ombre-1 {
   box-shadow: 1px 4px 14px -5px #666666;
 }
@@ -19,4 +31,8 @@
 
 @mixin bordure {
   border-radius: 1rem 1rem 0 0;
+}
+
+@mixin font-primaire {
+  font-family: "Shrikhand", cursive;
 }

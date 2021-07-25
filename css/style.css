@@ -100,6 +100,32 @@ body {
   text-align: center;
 }
 
+.fa-heart {
+  font-size: 22px;
+  cursor: pointer;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  color: white;
+}
+.fa-heart:hover {
+  background: -webkit-linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0;
+}
+
+.btn-commande {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .new {
   color: #0c8d6e;
   font-weight: bold;
@@ -173,19 +199,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.carte-menu__header i {
-  font-size: 22px;
-  cursor: pointer;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: black;
-  color: white;
-}
-.carte-menu__header i:hover {
-  background: -webkit-linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 0;
 }
 
 .header {
@@ -378,5 +391,152 @@ body {
 .restaurants-cartes {
   -webkit-box-shadow: 1px 3px 14px -9px #666666;
           box-shadow: 1px 3px 14px -9px #666666;
+}
+
+.main-menu {
+  background-color: #f6f6f6;
+}
+
+.menu__body {
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 30px 20px;
+  border-radius: 2rem 2rem 0 0;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.menu__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu__title h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+.choix__title {
+  color: #7e7e7e;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-top: 36px;
+  margin-bottom: 26px;
+  position: relative;
+}
+.choix__title::after {
+  content: "";
+  height: 2px;
+  width: 40px;
+  background-color: #99e2d0;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.choix__ensemble {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 14px 1fr 14px 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 14px;
+  margin-bottom: 40px;
+}
+
+.choix-carte {
+  overflow: hidden;
+  height: 70px;
+  width: 350px;
+  background-color: white;
+  border-radius: 1rem;
+  -webkit-box-shadow: 1px 3px 14px -9px #666666;
+          box-shadow: 1px 3px 14px -9px #666666;
+  position: relative;
+  cursor: pointer;
+}
+.choix-carte__header {
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.choix-carte__title {
+  width: 260px;
+  -webkit-transition: width 400ms ease-out;
+  transition: width 400ms ease-out;
+}
+.choix-carte__title h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.choix-carte__title p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.choix-carte__prix {
+  margin-right: 10px;
+  font-weight: bold;
+  -webkit-transition: -webkit-transform 400ms ease-out;
+  transition: -webkit-transform 400ms ease-out;
+  transition: transform 400ms ease-out;
+  transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
+}
+.choix-carte:hover .select {
+  right: 0px;
+}
+.choix-carte:hover .choix-carte__prix {
+  -webkit-transform: translateX(-80px);
+          transform: translateX(-80px);
+}
+.choix-carte:hover .choix-carte__title {
+  width: 200px;
+}
+.choix-carte:hover i {
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
+}
+.choix-carte .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  width: 60px;
+  height: 100%;
+  background-color: #99e2d0;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.choix-carte i {
+  color: white;
+  font-size: 20px;
+  -webkit-transition: -webkit-transform 600ms 100ms ease-in-out;
+  transition: -webkit-transform 600ms 100ms ease-in-out;
+  transition: transform 600ms 100ms ease-in-out;
+  transition: transform 600ms 100ms ease-in-out, -webkit-transform 600ms 100ms ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

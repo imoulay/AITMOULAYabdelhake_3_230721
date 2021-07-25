@@ -54,3 +54,26 @@
     text-align: center;
   }
 }
+
+.fa-heart {
+  font-size: 22px;
+  cursor: pointer;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  color: white;
+
+  &:hover {
+    background: -webkit-linear-gradient(
+      162deg,
+      rgba(255, 121, 218, 1) 0%,
+      rgba(147, 86, 220, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0;
+  }
+}
+
+.btn-commande {
+  @include vertical-centre-content;
+}
