@@ -6,6 +6,12 @@ $fond-gris: #f6f6f6;
 $text-gris: #7e7e7e;
 $degrade: linear-gradient(
   170deg,
-  $couleur-secondaire 0%,
-  $couleur-primaire 100%
+  rgba(255, 121, 218, 1) 0%,
+  rgba(147, 86, 220, 1) 100%
+);
+
+$breakpoints: (
+   mobile: 576px,
+  tablette: 768px,
+  desktop: 992px,
 );
