@@ -2,7 +2,6 @@
 @import "./Utils/mixins";
 @import "./Utils/variables";
 @import "./Utils/keyframes";
-@import "./Base/fonts";
 @import "./Base/base";
 @import "./Composants/boutons";
 @import "./Composants/badges";
@@ -82,7 +81,9 @@
   }
 }
 .restaurants-cartes {
+  position: relative;
   @include ombre-2;
+  border-radius: 2rem;
 }
 
 .main-menu {

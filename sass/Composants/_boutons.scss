@@ -70,16 +70,24 @@
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
   color: white;
+  position: absolute;
+  bottom: 27px;
+  right: 20px;
 
   &:hover {
     background: -webkit-linear-gradient(
-      162deg,
+      360deg,
       rgba(255, 121, 218, 1) 0%,
       rgba(147, 86, 220, 1) 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0;
+  }
+
+  &__menu {
+    top: 40px;
+    right: 40px;
   }
 }
 
