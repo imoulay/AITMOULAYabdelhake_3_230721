@@ -1,0 +1,47 @@
+.section__loader {
+  @include vertical-centre-content;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: -1;
+  animation: section-loader 0.1s 2s both;
+}
+.loader {
+  animation: loader-rotate 1s ease-in-out infinite;
+  border: 2px solid #ff79da;
+  border-radius: 50%;
+  box-sizing: inherit;
+  height: 56px;
+  width: 56px;
+  &:after {
+    background-color: #9356dc;
+    border-radius: 50%;
+    content: "";
+    height: 10px;
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    top: -6px;
+    width: 10px;
+  }
+}
+@keyframes loader-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes section-loader {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

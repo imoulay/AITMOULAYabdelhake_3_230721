@@ -18,4 +18,17 @@ body {
   font-family: "Roboto", sans-serif;
   min-width: 400px;
   min-width: 400px;
+  position: relative;
+}
+.site {
+  animation: site 0.5s 2s both;
+}
+@keyframes site {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
