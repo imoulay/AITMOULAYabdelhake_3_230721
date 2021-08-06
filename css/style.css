@@ -56,8 +56,6 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
-  min-width: 400px;
-  min-width: 400px;
   position: relative;
 }
 
@@ -260,8 +258,8 @@ body {
   -webkit-text-stroke-width: 0;
 }
 .fa-heart__menu {
-  top: 40px;
-  right: 40px;
+  top: 44px;
+  right: 30px;
 }
 
 .btn-commande {
@@ -289,7 +287,6 @@ body {
 }
 
 .carte-menu {
-  min-width: 334px;
   min-height: 250px;
   display: -ms-grid;
   display: grid;
@@ -365,7 +362,6 @@ body {
 .choix-carte {
   overflow: hidden;
   height: 70px;
-  min-width: 350px;
   background-color: white;
   border-radius: 1rem;
   -webkit-box-shadow: 1px 3px 14px -9px #666666;
@@ -484,6 +480,8 @@ body {
   background-color: white;
   height: 63px;
   position: relative;
+  -webkit-box-shadow: 1px 3px 14px -9px #666666;
+          box-shadow: 1px 3px 14px -9px #666666;
 }
 .header i {
   position: absolute;
@@ -580,8 +578,6 @@ body {
      -moz-column-gap: 1rem;
           column-gap: 1rem;
   background-color: #eaeaea;
-  -webkit-box-shadow: 0px 4px 6px 0px #b3b3b3 inset;
-          box-shadow: 0px 4px 6px 0px #b3b3b3 inset;
 }
 
 .presentation {
@@ -673,7 +669,7 @@ body {
   -ms-grid-rows: auto 1rem repeat 1rem 4, 1fr;
   grid-template-rows: auto repeat 4, 1fr;
   row-gap: 1rem;
-  padding: 3rem;
+  padding: 3rem 1.5rem;
   background-color: #f6f6f6;
 }
 @media (min-width: 768px) {
@@ -733,7 +729,7 @@ body {
 .menu__body {
   width: 100%;
   background-color: #f6f6f6;
-  padding: 30px 20px;
+  padding: 2rem 1.5rem;
   border-radius: 2rem 2rem 0 0;
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
@@ -755,6 +751,7 @@ body {
 }
 .menu__title h1 {
   font-family: "Shrikhand", cursive;
+  width: 88%;
 }
 
 .choix__title {

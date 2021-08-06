@@ -1,7 +1,7 @@
 @import "./Utils/fonctions";
 @import "./Utils/mixins";
-@import "./Utils/variables";
 @import "./Utils/keyframes";
+@import "./Utils/variables";
 @import "./Base/base";
 @import "./Composants/loader";
 @import "./Composants/boutons";
@@ -20,7 +20,6 @@
   padding: 1rem;
   column-gap: 1rem;
   background-color: #eaeaea;
-  box-shadow: 0px 4px 6px 0px #b3b3b3 inset;
 }
 .presentation {
   @include vertical-centre-content;
@@ -67,7 +66,7 @@
   display: grid;
   grid-template-rows: auto repeat (4, 1fr);
   row-gap: 1rem;
-  padding: 3rem;
+  padding: 3rem 1.5rem;
   background-color: $fond-gris;
 
   @media (min-width: map-get($breakpoints, tablette)) {
@@ -93,7 +92,7 @@
 .menu__body {
   width: 100%;
   background-color: $fond-gris;
-  padding: 30px 20px;
+  padding: 2rem 1.5rem;
   border-radius: 2rem 2rem 0 0;
   transform: translateY(-30px);
 }
@@ -103,6 +102,7 @@
 
   h1 {
     @include font-primaire;
+    width: 88%;
   }
 }
 .choix__title {

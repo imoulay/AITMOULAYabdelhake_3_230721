@@ -4,6 +4,7 @@
   background-color: white;
   height: 63px;
   position: relative;
+  @include ombre-2;
 
   i {
     position: absolute;

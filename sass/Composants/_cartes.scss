@@ -1,5 +1,4 @@
 .carte-menu {
-  min-width: 334px;
   min-height: 250px;
   display: grid;
   grid-template-rows: 174px 78px;
@@ -45,7 +44,6 @@
 .choix-carte {
   overflow: hidden;
   height: 70px;
-  min-width: 350px;
   background-color: white;
   border-radius: 1rem;
   @include ombre-2;
