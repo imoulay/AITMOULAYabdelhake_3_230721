@@ -101,8 +101,8 @@ body {
 }
 
 .loader {
-  -webkit-animation: loader-rotate 1s ease-in-out 10;
-          animation: loader-rotate 1s ease-in-out 10;
+  -webkit-animation: loader-rotate 1s ease-in-out 5;
+          animation: loader-rotate 1s ease-in-out 5;
   border: 2px solid #ff79da;
   border-radius: 50%;
   -webkit-box-sizing: inherit;
@@ -179,7 +179,6 @@ body {
 }
 
 .menu-select {
-  min-width: 300px;
   height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,9 +379,11 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
 }
 .choix-carte__title {
-  width: 260px;
+  width: 80%;
   -webkit-transition: width 400ms ease-out;
   transition: width 400ms ease-out;
 }
@@ -412,7 +413,7 @@ body {
           transform: translateX(-80px);
 }
 .choix-carte:hover .choix-carte__title {
-  width: 200px;
+  width: 60%;
 }
 .choix-carte:hover i {
   -webkit-transform: rotate(1turn);

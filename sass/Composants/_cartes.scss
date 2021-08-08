@@ -55,9 +55,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-flow: wrap;
   }
   &__title {
-    width: 260px;
+    width: 80%;
     transition: width 400ms ease-out;
 
     h3 {
@@ -84,7 +85,7 @@
     transform: translateX(-80px);
   }
   &:hover .choix-carte__title {
-    width: 200px;
+    width: 60%;
   }
   &:hover i {
     transform: rotate(1turn);
