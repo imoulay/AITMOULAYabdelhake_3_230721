@@ -101,8 +101,8 @@ body {
 }
 
 .loader {
-  -webkit-animation: loader-rotate 1s ease-in-out infinite;
-          animation: loader-rotate 1s ease-in-out infinite;
+  -webkit-animation: loader-rotate 1s ease-in-out 10;
+          animation: loader-rotate 1s ease-in-out 10;
   border: 2px solid #ff79da;
   border-radius: 50%;
   -webkit-box-sizing: inherit;
